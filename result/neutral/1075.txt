@@ -1,0 +1,1 @@
+['sh600036', '招商银行', 42957.0, 0.5333333333333333, '内银股随市下挫 招行跌逾3%', 'http://finance.sina.com.cn/stock/hkstock/ggscyd/2017-08-10/doc-ifyixhyw6690857.shtml', '', '', '']

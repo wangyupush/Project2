@@ -1,0 +1,1 @@
+['sh600048', '保利地产', 42958.0, 0.5243055555555556, '保利协鑫能源(03800-HK)与天津中环订立有关晶硅材料的合作协议', 'http://finance.sina.com.cn/stock/hkstock/ggscyd/2017-08-11/doc-ifyixcaw4142883.shtml', '', '', '']

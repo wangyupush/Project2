@@ -1,0 +1,1 @@
+['sh600036', '招商银行', 42965.0, 0.5715277777777777, '快讯：银行、保险快速拉升 中国平安涨逾4%', 'http://finance.sina.com.cn/stock/gujiayidong/2017-08-18/doc-ifykcppx9286103.shtml', '', '', '']

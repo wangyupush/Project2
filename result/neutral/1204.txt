@@ -1,0 +1,1 @@
+['sh600048', '保利地产', 42965.0, 0.5652777777777778, '麦格理给予保利协鑫能源(03800-HK)新目標价为1.2元', 'http://finance.sina.com.cn/stock/hkstock/ggscyd/2017-08-18/doc-ifykcirz2879020.shtml', '', '', '']

@@ -1,0 +1,1 @@
+['sh600006', '东风汽车', 42948.0, 0.5708333333333333, '快讯：一汽系个股持续拉升 一汽夏利涨停', 'http://finance.sina.com.cn/stock/gujiayidong/2017-08-01/doc-ifyinvwu4282364.shtml', '', '', '']

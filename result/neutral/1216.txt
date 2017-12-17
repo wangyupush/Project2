@@ -1,0 +1,1 @@
+['sh600048', '保利地产', 42958.0, 0.5, '中环股份与保利协鑫签合作协议', 'http://finance.sina.com.cn/stock/t/2017-08-11/doc-ifyixcaw4130616.shtml', '', '', '']
