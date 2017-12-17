@@ -1,6 +1,4 @@
-"""
-集合了清洗数据的函数，例如：简体繁体转化、文本向量化等
-"""
+
 #encoding:utf-8
 import os
 import pickle
@@ -36,31 +34,6 @@ posList = []
 negList = []
 wordsList = [] # 基于所有训练样本的词袋（针对 不基于词典 这种文本向量化方法）
 docList = [] # 所有文档的词语组成的2维词列表（tf-idf所需要的词列表）
-
-# 转换繁体到简体
-def cht_to_chs(line):
-    line = Converter('zh-hans').convert(line)
-    line.encode('utf-8')
-    return line
-
-# 转换简体到繁体
-def chs_to_cht(line):
-    line = Converter('zh-hant').convert(line)
-    line.encode('utf-8')
-    return line
-
-
-def clearNews(news,mode=False):
-    '''
-    新闻格式一体化
-    :param news: 包括繁体，网页格式
-    :param mode: 默认是繁体->简体
-    :return: 清洗后的标准格式news
-    '''
-    if not mode:
-        return cleanHtml(cht_to_chs(news))
-    else:
-        return cleanHtml(chs_to_cht(news))
 
 # 加载停用词
 def loadStopwords(path = stopwordsPath):
@@ -154,20 +127,9 @@ def loadDocument(stopList):
 
 
 def words2Vec(news,emotionList,stopList,posList,negList,mode=0):
-    """
-    新闻文本翻译成词向量
-    :param news: 新闻文本
-    :param emotionList: 情感词列表
-    :param stopList: 停用词列表
-    :param posList: 积极词列表
-    :param negList: 消极词列表
-    :param mode: int and [0,5)。对应不同的翻译文本的方法
-    :return: list类型（方便之后的操作，例如，numpy.array()）
-    """
-    # 参数类型检查
-    assert isinstance(stopList,list) and isinstance(emotionList,list),"类型不对。Function 'word2vec' at OperateDat.py"
 
-    news = clearNews(news)
+    # 参数类型检查
+    assert isinstance(stopList,list) and isinstance(emotionList,list),"类型不对。Function 'word2vec' at OperateDat.py
     noun = [word for word,flag in pseg.lcut(news) if flag.startswith('n')] # 名词列表
 
     # 过滤停用词和名词
@@ -232,14 +194,6 @@ def dataNormal(vecArr):
 
 
 def randomData(xData,yData,w=0.25,logFile=None):
-    """
-    随机生成训练集和测试集
-    :param xData: m*n narray.
-    :param yData: n narray.
-    :param w: 训练集和测试集分割的权重
-    :param logFile: n list. 记录每条数据的tag（例如文件名）
-    :return: 分割好的trainX,trainY,testX,testY[,logTrain,logTest]
-    """
     np.random.seed(0) # 为了使每次的结果可以比较，要设置一个种子数
     if logFile:
         assert len(logFile)==len(xData)==len(yData),'缺少维度 at OperateData.py'
@@ -259,12 +213,6 @@ def randomData(xData,yData,w=0.25,logFile=None):
 
 
 def twoTag(x_arr,y_arr):
-    """
-    针对二分类方法
-    :param x_arr: m*n narray.
-    :param y_arr: n narray.
-    :return: 剔除中性样本后的新样本
-    """
     new_index = (y_arr != 0)
     new_x = x_arr[new_index, :]  # 所有中性样本
     new_y = y_arr[new_index]
@@ -279,12 +227,7 @@ if __name__=='__main__':
 
     resultX = []
     resultY = []
-    logfile = [] # 留作bug
-    '''
-    for doc in os.listdir(documentPath):
-        if doc[:3] in ('pos','neg','neu'):
-            logfile.append(doc)
-    '''
+    logfile = [] 
     for doc in os.listdir(negPath):
          logfile.append(doc)
     for doc in os.listdir(neuPath):
@@ -300,14 +243,7 @@ if __name__=='__main__':
 
     for mode in range(modes):
         x = []
-        y = []
-       
-        '''
-        news_file_path = os.path.join(documentPath,doc)
-        '''
-        
-        
-        
+        y = []  
         for doc in os.listdir(negPath):
             news = None
             news_file_path1 = os.path.join(negPath,doc)
