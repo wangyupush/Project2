@@ -1,0 +1,1 @@
+['sh600316', '洪都航空', 42964.0, 0.4131944444444444, '快讯：军工板块异动拉升 中船科技涨近7%', 'http://finance.sina.com.cn/stock/gujiayidong/2017-08-17/doc-ifykcppx8523449.shtml', '', '', '']

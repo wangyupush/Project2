@@ -1,0 +1,1 @@
+['sh600318', '新力金融', 42955.0, 0.40208333333333335, '快讯：新力金融完成自查整改复牌 股价开盘秒板', 'http://finance.sina.com.cn/stock/gujiayidong/2017-08-08/doc-ifyitamv7033574.shtml', '', '', '']

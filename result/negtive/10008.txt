@@ -1,0 +1,1 @@
+['sh600316', '洪都航空', 42951.0, 0.56875, '快讯：军工板块午后持续发力 中航高科等7股涨停', 'http://finance.sina.com.cn/stock/gujiayidong/2017-08-04/doc-ifyitamv5101264.shtml', '', '', '']

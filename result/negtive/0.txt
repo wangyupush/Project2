@@ -1,0 +1,1 @@
+['sh600000', '浦发银行', 42964.0, 0.7145833333333332, '呷哺呷哺(00520)认购1.5亿元浦发银行金融产品', 'http://finance.sina.com.cn/stock/hkstock/ggscyd/2017-08-17/doc-ifykcirz2571750.shtml', '', '', '']

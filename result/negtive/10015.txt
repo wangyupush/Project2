@@ -1,0 +1,1 @@
+['sh600316', '洪都航空', 42942.0, 0.5625, '快讯：国防军工板块直线拉升 洪都航空涨逾5%', 'http://finance.sina.com.cn/stock/gujiayidong/2017-07-26/doc-ifyihrit1478804.shtml', '', '', '']
