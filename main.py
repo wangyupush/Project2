@@ -13,13 +13,7 @@ warnings.filterwarnings('ignore')
 VECTOR_MODE = {'onehot': 0, 'wordfreq': 1, 'twovec': 2, 'tfidf': 3, 'outofdict': 4}
 
 def save_model(best_vector,best_model):
-    """
-    存储效果最好的模型
-    需要手动指明参数名字
-    :param best_vector: 最好的文本->词向量的方法
-    :param best_model: 最好的机器学习模型
-    :return: info
-    """
+ 
     od.loadStopwords()
     od.loadEmotionwords()
     od.loadWords(od.stopList)
@@ -36,9 +30,7 @@ def save_model(best_vector,best_model):
     print("Save over")
 
 class Predictor(object):
-    """
-    更多的使用说明请去看README.md
-    """
+   
     def __init__(self):
         self._model = None
         self.news = None
@@ -84,12 +76,10 @@ if __name__=='__main__':
     best_vector = "wordfreq"
     best_model = 1
     save_model(best_vector, best_model)
-    ##### 单例模式 #####
+
     predictor = Predictor()
     predictor.load_model()
-    predictor.set_mode(mode="wordfreq") # 以上代码是初始化配置，只需要调用一次
-
-    ##### 下面的代码可以循环调用 ####
+    predictor.set_mode(mode="wordfreq") 
     
     data = xlrd.open_workbook('fulldata.xls')
     table=data.sheet_by_index(0)
