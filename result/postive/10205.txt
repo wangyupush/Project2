@@ -1,0 +1,1 @@
+['sh600322', '天房发展', 42964.0, 0.1451388888888889, '上证所问询天房发展：融创有无参与天房集团混改竞标', 'http://finance.sina.com.cn/stock/hkstock/ggscyd/2017-08-17/doc-ifykcirz2403388.shtml', '', '', '']

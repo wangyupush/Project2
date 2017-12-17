@@ -1,0 +1,1 @@
+['sh600316', '洪都航空', 42951.0, 0.4527777777777778, '快讯：军工板块全线爆发 中航黑豹、航天发展涨停', 'http://finance.sina.com.cn/stock/gujiayidong/2017-08-04/doc-ifyitamv5030490.shtml', '', '', '']

@@ -1,0 +1,1 @@
+['sh600316', '洪都航空', 42937.0, 0.4479166666666667, '快讯：航空股直线上涨 贵航股份涨近8%', 'http://finance.sina.com.cn/stock/gujiayidong/2017-07-21/doc-ifyihrit1103711.shtml', '', '', '']
